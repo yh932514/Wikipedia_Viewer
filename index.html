@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wiki Viewer">
+  <meta name="theme-color" content="gainsboro">
+  <title>Wiki Viewer</title>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css">
@@ -8,16 +13,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script src="scripts.js"></script>
+  <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </head>
 <body>
 <div class="container">
   <p class="p1">Click here for a random article</p>
     <div id="cover">
         <div class="tb">
-            <div class="td"><input type="text" placeholder="Search" id="input"  onkeydown="search(event)"></div>
+            <div class="td"><input type="text" placeholder="Search" id="input" aria-label="input text" onkeydown="search(event)"></div>
             <div class="td" id="s-cover">
-              <button onclick="connect()">
-                <div id="s-circle"></div>
+                <div><button id="s-circle" onclick="connect()" aria-label="Search"><span></span></button></div>
                 <span></span>
               </button>
             </div>
