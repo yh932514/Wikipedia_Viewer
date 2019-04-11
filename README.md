@@ -10,5 +10,5 @@ Project from freecodecamp.org
 cd to the directory where has the html files.
 $python -m SimpleHTTPServer 8080
 
-
+# Style
 Search Bar style retrieve from https://codepen.io/himalayasingh/pen/dqjLgO
