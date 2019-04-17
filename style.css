@@ -1,29 +1,28 @@
 body {
   font-family: 'Roboto';
-  color: #fff;
-  background-color: gainsboro;
+  color: grey;
+/*  background-color: gainsboro;*/
 }
 
 .p1{
-  position: absolute;
-  top: 40%;
-  left: 40%;
+    text-align: center;
+    margin-top: 25%;
 }
 .p2{
-  position: absolute;
-  top: 70%;
-  left: 40%;
+    text-align: center;
 }
 
 #result{    
-    position: absolute;
-    top: 40%;
+    margin: auto;
   }
   .box{
+    color: grey;
     padding: 10px;
-    margin: 10px;
+    margin: 60px;
     width: 90%;
-    background: lightblue;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px grey, 0 0 0 20px #ffffffeb;
   }
   
 /* style from https://codepen.io/himalayasingh/pen/dqjLgO */
@@ -50,10 +49,8 @@ input, button
 }
 
 #cover
-{
-    position: absolute;
-    top: 50%;
-    left: 25%;
+{   
+    margin: 60px auto;
     width: 50%;
     padding: 5px;
     background-color: white;
@@ -165,4 +162,36 @@ button span:before, button span:after
     right: -6px;
     width: 40px;
     background-color: lightgrey;
+}
+
+@media only screen and (max-width: 575px) {
+    .box{ 
+        width: 75%;  
+        box-shadow: 0 10px 20px grey, 0 0 0 20px #ffffffeb;
+        border-radius: 10px;
+    }
+    input[type="text"]{ font-size: 30px;}
+    #s-circle {
+        width: 40px; 
+        height: 40px;
+    }
+    button span{
+        top: 35px;
+        left: 10px;
+    }
+    #cover{
+        width: 70%;
+    }
+    #s-cover:hover #s-circle {
+        width: 60px;
+    }
+    #s-cover:hover span { left: 45px;}
+    #s-cover:hover button span:before{
+        bottom: 5px;
+        transform: rotateZ(52deg);
+    }
+
+    #s-cover:hover button span:after{
+        bottom: -15px;
+        transform: rotateZ(-52deg);}
 }

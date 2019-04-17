@@ -14,8 +14,8 @@ function clearresult(){
 function connect(){
   document.getElementsByClassName("p2")[0].style.display="none";
   var term = document.getElementsByTagName("input")[0].value;
-  document.getElementById("cover").style.top="15%";
-  document.getElementsByClassName("p1")[0].style.top="2%";
+  document.getElementById("cover").style.margin="60px auto;";
+  document.getElementsByClassName("p1")[0].style.marginTop="2%";
   var api ="https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + term;
   //cors-anywhere get from https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe/43881141
   const proxyurl = "https://cors-anywhere.herokuapp.com/"; // site that doesn’t send Access-Control-*
